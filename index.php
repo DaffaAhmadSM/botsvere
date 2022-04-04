@@ -20,6 +20,8 @@ $discord = new Discord([
     'intents' => [
         Intents::GUILDS, Intents::GUILD_BANS, Intents::GUILD_MESSAGES // ...
     ],
+    'shardId' => (int) $_ENV["SHARD_ID"],
+    'shardCount' => (int) $_ENV["SHARD_COUNT"],
 ]);
 
 $discord->on('ready', function (Discord $discord) {
