@@ -87,8 +87,7 @@ $discord->on('ready', function (Discord $discord) {
                         ],
                         [
                             'name' => '**'.$_ENV["PREFIX"].'random.ayat.{numbersurah}**',
-                            'value' => 'get a random ayat from surah
-                            example: '.$_ENV["PREFIX"].'random.ayat.1 to get a random ayat from surah al-fatihah',
+                            'value' => 'get a random ayat from surah example: '.$_ENV["PREFIX"].'random.ayat.1 to get a random ayat from surah al-fatihah',
                             'inline' => true,
                         ],
                     ],
@@ -128,7 +127,8 @@ $discord->on('ready', function (Discord $discord) {
                         'fields' => [
                             [
                                 'name' => '​',
-                                'value' => "1. Al-Fatihah
+                                'value' => "
+                                1. Al-Fatihah
                                 2. Al-Baqarah
                                 3. Aali Imran
                                 4. An-Nisa’
@@ -142,7 +142,8 @@ $discord->on('ready', function (Discord $discord) {
                             ],
                             [
                                 'name' => '​',
-                                'value' => " 11. Hud
+                                'value' => "
+                                11. Hud
                                 12. Yusuf
                                 13. Ar-Ra’d
                                 14. Ibrahim
@@ -156,7 +157,8 @@ $discord->on('ready', function (Discord $discord) {
                             ],
                             [
                                 'name' => '​',
-                                'value' => " 21. Al-Anbiya’
+                                'value' => "
+                                21. Al-Anbiya’
                                 22. Al-Haj
                                 23. Al-Mu’minun
                                 24. An-Nur
@@ -170,7 +172,8 @@ $discord->on('ready', function (Discord $discord) {
                             ],
                             [
                                 'name' => '​',
-                                'value' => " 31. Luqman
+                                'value' => "
+                                31. Luqman
                                 32. As-Sajdah
                                 33. Al-Ahzab
                                 34. Saba’
@@ -184,7 +187,8 @@ $discord->on('ready', function (Discord $discord) {
                             ],
                             [
                                 'name' => '​',
-                                'value' => " 41. Fusilat
+                                'value' => "
+                                41. Fusilat
                                 42. Ash-Shura
                                 43. Az-Zukhruf
                                 44. Ad-Dukhan
@@ -198,7 +202,8 @@ $discord->on('ready', function (Discord $discord) {
                             ],
                             [
                                 'name' => '​',
-                                'value' => " 50. Qaf
+                                'value' => "
+                                50. Qaf
                                 51. Adz-Dzariyah
                                 52. At-Tur
                                 53. An-Najm
@@ -213,7 +218,8 @@ $discord->on('ready', function (Discord $discord) {
                             ],
                             [
                                 'name' => '​',
-                                'value' => "60. Al-Mumtahanah
+                                'value' => "
+                                60. Al-Mumtahanah
                                 61. As-Saf
                                 62. Al-Jum’ah
                                 63. Al-Munafiqun
@@ -229,7 +235,8 @@ $discord->on('ready', function (Discord $discord) {
                             ],
                             [
                                 'name' => '​',
-                                'value' => "71. Nuh
+                                'value' => "
+                                71. Nuh
                                 72. Al-Jinn
                                 73. Al-Muzammil
                                 74. Al-Mudaththir
@@ -244,7 +251,8 @@ $discord->on('ready', function (Discord $discord) {
                             ],
                             [
                                 'name' => '​',
-                                'value' => "81. At-Takwir
+                                'value' => "
+                                81. At-Takwir
                                 82. Al-Infitar
                                 83. Al-Mutaffifin
                                 84. Al-Inshiqaq
@@ -259,7 +267,8 @@ $discord->on('ready', function (Discord $discord) {
                             ],
                             [
                                 'name' => '​',
-                                'value' => " 91. Ash-Shams
+                                'value' => "
+                                91. Ash-Shams
                                 92. Al-Layl
                                 93. Adh-Dhuha
                                 94. Al-Inshirah
@@ -274,7 +283,8 @@ $discord->on('ready', function (Discord $discord) {
                             ],
                             [
                                 'name' => '​',
-                                'value' => "101. Al-Qari’ah
+                                'value' => "
+                                101. Al-Qari’ah
                                 102. At-Takathur
                                 103. Al-‘Asr
                                 104. Al-Humazah
@@ -288,7 +298,8 @@ $discord->on('ready', function (Discord $discord) {
                             ],
                             [
                                 'name' => '​',
-                                'value' => "111. Al-Masad
+                                'value' => "
+                                111. Al-Masad
                                 112. Al-Ikhlas
                                 113. Al-Falaq
                                 114. An-Nas",
