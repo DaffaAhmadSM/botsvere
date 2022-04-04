@@ -28,7 +28,6 @@ $discord->on('ready', function (Discord $discord) {
     // Listen for messages.
     $discord->on(Event::MESSAGE_CREATE, function (Message $message, Discord $discord) {
         // check if the message is a command
-        echo $message->content, PHP_EOL;
         $client = new Client(['base_uri' => (string)$_ENV["BASE_URI"]]);
         $msgexplode = explode('.', $message->content);
         //*get Random Ayat
