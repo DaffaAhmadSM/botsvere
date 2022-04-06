@@ -20,8 +20,8 @@ $discord = new Discord([
     'intents' => [
         Intents::GUILDS, Intents::GUILD_BANS, Intents::GUILD_MESSAGES // ...
     ],
-    'shardId' => (int) $_ENV["SHARD_ID"],
-    'shardCount' => (int) $_ENV["SHARD_COUNT"],
+    // 'shardId' => (int) $_ENV["SHARD_ID"],
+    // 'shardCount' => (int) $_ENV["SHARD_COUNT"],
 ]);
 
 $discord->on('ready', function (Discord $discord) {
@@ -100,6 +100,7 @@ $discord->on('ready', function (Discord $discord) {
         }
         //*if command has 3 words
         if(count($msgexplode) == 3) {
+            //*get random ayat by surah
             if($msgexplode[0] == (string)$_ENV["PREFIX"]."random" && $msgexplode[1] == "ayat" && is_numeric($msgexplode[2])) {
                 try {
                     $response = $client->request('GET', 'api/quran/random/sura/'.$msgexplode[2]);
@@ -110,7 +111,7 @@ $discord->on('ready', function (Discord $discord) {
                     ->addEmbed(
                         [
                             'title' => 'Error',
-                            'description' => 'Please try again later or contact the developer',
+                            'description' => 'Surah not found, you can check the list of surah with '.$_ENV["PREFIX"].'surah',
                             'color' => hexdec( "f44336" ),
                         ]
                     );
@@ -325,7 +326,28 @@ $discord->on('ready', function (Discord $discord) {
                 $message->channel->sendMessage($embed);
             }
         }
-        
+        //* donation *//
+        if($message->content == (string)$_ENV["PREFIX"]."donation")
+        {
+            $embed = MessageBuilder::new()
+                ->addEmbed(
+                    [
+                        "type" => "link",
+                        "title" => "Donation",
+                        "description" => "If you want to donate, please click the link below",
+                        "fields" => [
+                            ["name" => "Trakteer",
+                            "value" => "https://trakteer.id/d-afra-j7uzd",],
+                            [
+                            "name" => "Saweria",
+                            "value" => "https://saweria.co/hiutrbg",
+                            ]
+                        ],
+                    ]
+                );
+
+            $message->channel->sendMessage($embed);
+        }
         
     });
    
