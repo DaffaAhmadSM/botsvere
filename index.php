@@ -92,6 +92,12 @@ $discord->on('ready', function (Discord $discord) {
                             'value' => 'get a random ayat from surah example: '.$_ENV["PREFIX"].'random.ayat.1 to get a random ayat from surah al-fatihah',
                             'inline' => true,
                         ],
+                        [
+                            'name' => '**'.$_ENV["PREFIX"].'donation**',
+                            'value' => 'If you want to donate',
+                            'inline' => true,
+                        ],
+
                     ],
                     'color' => hexdec( "f44336" ),
                 ]
