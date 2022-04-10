@@ -58,7 +58,7 @@ $discord->on('ready', function (Discord $discord) {
                 [
                     'type' => 'article',
                     'title' => 'Help',
-                    'description' => '**svere**',
+                    'description' => '**list of help command**',
                     'timestamp' => date('c'),
                     'fields' => [
                         
